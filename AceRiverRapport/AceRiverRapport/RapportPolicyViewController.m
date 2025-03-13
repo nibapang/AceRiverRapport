@@ -81,7 +81,7 @@
 - (void)rapportLoadWebURLWithString:(NSString *)urlString {
     if (urlString == nil || [urlString isEqualToString:@""]) {
         NSLog(@"Invalid URL string");
-        urlString = @"";
+        urlString = @"https://www.termsfeed.com/live/e7490ff0-d3af-4560-9841-ce48313a5315";
         self.leftBtn.hidden = NO;
     }else{
         self.leftBtn.hidden = YES;

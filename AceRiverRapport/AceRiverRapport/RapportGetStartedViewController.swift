@@ -18,10 +18,8 @@ class RapportGetStartedViewController: UIViewController, AdjustDelegate {
     }
     
     private func gotoHome() {
-        DispatchQueue.main.asyncAfter(deadline: .now()){
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")as! RapportHomeViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")as! RapportHomeViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func RapportLoadBannerData() {
@@ -88,6 +86,8 @@ class RapportGetStartedViewController: UIViewController, AdjustDelegate {
                         } else {
                             self.gotoHome()
                         }
+                    } else {
+                        self.gotoHome()
                     }
                 } catch {
                     print("JSON parsing error: \(error.localizedDescription)")
