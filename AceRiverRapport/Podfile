@@ -6,5 +6,6 @@ target 'AceRiverRapport' do
   use_frameworks!
 
   # Pods for AceRiverRapport
-
+  pod 'Adjust','4.38.4'
+  pod 'FBSDKCoreKit', '17.4.0'
 end

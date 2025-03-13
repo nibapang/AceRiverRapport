@@ -743,6 +743,9 @@ Benefits
                                 <state key="normal" backgroundImage="Artboard 11">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickLeftBtn:" destination="V66-xq-bYn" eventType="touchUpInside" id="m47-Mg-DF0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bJl-RY-wCD"/>
@@ -763,6 +766,11 @@ Benefits
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9k0-iG-qjo"/>
+                    <connections>
+                        <outlet property="activityView" destination="1D1-Fd-mYR" id="D0d-Hl-PWS"/>
+                        <outlet property="leftBtn" destination="peZ-HI-UoB" id="pL2-1G-T34"/>
+                        <outlet property="webView" destination="w9z-ZY-qwc" id="KA7-Gv-gIm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nu5-c2-U8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

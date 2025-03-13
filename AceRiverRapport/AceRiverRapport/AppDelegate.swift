@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  AceRiverRapport
 //
-//  Created by jin fu on 2025/3/13.
+//  Created by Ace River Rapport on 2025/3/13.
 //
 
 import UIKit
+import FBSDKCoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             }
         }
+        
+        ApplicationDelegate.shared.application(
+                    application,
+                    didFinishLaunchingWithOptions: launchOptions
+                )
         return true
     }
 
